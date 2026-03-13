@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SML.AI Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'sml-teal': {
+                50: '#e0f2f4',
+                100: '#b3e0e5',
+                200: '#80cdd5',
+                300: '#4db9c4',
+                400: '#26abb7',
+                500: '#1c9ba4', // Primary
+                600: '#158a93',
+                700: '#0e7680',
+                800: '#09616a',
+                900: '#054b52',
+              },
+              'sml-cream': {
+                50: '#f5f0e6', // Main Background
+                100: '#ede4d0', // Secondary Background
+                200: '#e0d6c0',
+              },
+              'sml-orange': '#ff6b6b', // Accent: Orange-Red
+              'sml-purple': '#9c89b8', // Accent: Purple
+              'sml-slate': {
+                800: '#2d3748',
+                900: '#1a202c',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'Microsoft JhengHei', 'sans-serif'],
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '2.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', 'Microsoft JhengHei', sans-serif; }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      /* Hide iframe border if any */
+      iframe { border: none !important; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "three": "https://esm.sh/three@0.160.0",
+    "three/addons/": "https://esm.sh/three@0.160.0/examples/jsm/",
+    "three/": "https://esm.sh/three@^0.182.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-sml-cream-50 text-slate-800 antialiased h-screen overflow-hidden">
+    <div id="root" class="h-full"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
