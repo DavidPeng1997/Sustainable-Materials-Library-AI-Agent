@@ -357,7 +357,7 @@ export const translations = {
     'sidebar.viewPlans': 'View Plans',
 
     // Navbar
-    'nav.user.name': 'Peter C.',
+    'nav.user.name': 'PIDC',
     'nav.user.role': 'Pro Member',
     
     // Settings Modal
@@ -368,7 +368,7 @@ export const translations = {
     'settings.close': 'Close',
 
     // Dashboard
-    'dashboard.welcome': 'Welcome back, Peter',
+    'dashboard.welcome': 'Welcome back, PIDC',
     'dashboard.subtitle': 'What sustainable material would you like to explore today?',
     'dashboard.quickActions': 'Quick Actions',
     'dashboard.startNewChat': 'Start New Chat',
